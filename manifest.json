@@ -1,0 +1,8 @@
+{
+  "name": "Weather Plugin",
+  "description": "This plugin fetches current weather data using the OpenWeatherMap API.",
+  "openapi": "URL_TO_YOUR_OPENAPI_SPEC", // Replace this with the URL to your OpenAPI spec after hosting
+  "auth": {
+    "type": "none"
+  }
+}
