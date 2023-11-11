@@ -1,7 +1,7 @@
 {
   "name": "Weather Plugin",
-  "description": "This plugin fetches current weather data using the OpenWeatherMap API.",
-  "openapi": "URL_TO_YOUR_OPENAPI_SPEC", // Replace this with the URL to your OpenAPI spec after hosting
+  "description": "This plugin fetches current weather data for Victoria, BC, Canada using the OpenWeatherMap API.",
+  "openapi": "https://ConPeace.github.io/GPT/openapi.json", 
   "auth": {
     "type": "none"
   }
