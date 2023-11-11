@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Weather API
+  version: 1.0.0
+  description: Fetches current weather data from OpenWeatherMap
+servers:
+  - url: https://api.openweathermap.org/data/3.0
+paths:
+  /onecall:
+    get:
+      summary: Get current weather
+      description: Retrieve current weather data
+      parameters:
+        - name: lat
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Latitude
+        - name: lon
+          in: query
+          required: true
+          schema:
+            type: number
+          description: Longitude
+        - name: appid
+          in: query
+          required: true
+          schema:
+            type: string
+          description: OpenWeatherMap API key
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  temp:
+                    type: number
+                    description: Temperature
+                  wind_speed:
+                    type: number
+                    description: Wind speed
